@@ -5,7 +5,6 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 COPY requirements.txt /app/requirements.txt
 
-# RUN apk update && apk add postgresql-dev gcc python3-dev musl-dev
 RUN apk update && \
     apk add --virtual build-base gcc g++ musl-dev && \
     apk add postgresql-dev libressl-dev libffi-dev libpq alpine-sdk
