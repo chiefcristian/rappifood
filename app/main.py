@@ -50,4 +50,3 @@ def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
 @app.get("/")
 async def root():
     return {"message": "Hola 🦄's aqui tienen un 🌈"}
-    
